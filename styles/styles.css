@@ -1,0 +1,184 @@
+@import '../node_modules/animate.css/animate.css';
+
+/* Основные стили */
+
+html {
+    /*cursor: url(../img/premium-icon-hand-2576580.png); */
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+    
+}
+
+.coffee-vendor {
+    display: grid;
+    position: absolute;
+    width: 700px;
+    height: 800px;
+    background-color: gray;
+    left: 240px;
+    top: 191px;
+    grid-template-columns: repeat(3,1fr);
+    
+    
+    
+}
+
+/*Правая панель*/
+.logo {
+    position: relative;
+    height: 800px;
+    width: 200px;
+}
+
+p {
+    font-size: 10pt;
+}
+
+.right {
+    display: grid;
+    justify-items: center;
+    align-items: end;
+}
+
+.money-container {
+    position: relative;
+    background-color: aliceblue;
+    width: 60px;
+    height: 51px;
+}
+.money-container-text {
+    position: relative;
+            top: 120px;
+}
+
+.coin-container {
+    position: relative;
+    background-color: black;
+    width: 10px;
+    height: 50px;
+    bottom: 140px;
+}
+
+.coin-container-text {
+    position: relative;
+    bottom: 20px;
+}
+
+.drop-active {
+    background-color: green;
+}
+
+.change-container {
+    background-color: gainsboro;
+    width: 50px;
+    height: 33px;
+    bottom: 50px;
+    position: relative;
+}
+
+/* Деньги */
+
+.Coin {
+    width: 50px;
+    height: 50px;
+
+    touch-action: none;
+    user-select: none;
+
+}
+
+.Banknote {
+    width: 100px;
+    height: 50px;
+}
+
+/*Кнопки*/
+
+button {
+    width: 25px;
+    height: 25px;
+}
+
+/* Центр */
+
+.display {
+    position: relative;
+    background-color: aqua;
+    width: 80px;
+    height: 25px;
+    top: 20%;
+    left: 42%;
+    
+}
+
+.panel {
+    position: relative;
+    background-color: silver;
+    width: 350px;
+    top: 200px;
+    left: 10px;
+    height: 400px;
+    display: grid;
+    grid-template-rows: repeat(7,1fr);
+    grid-template-columns: repeat(4,1fr);
+    align-items: center;
+    justify-items: center;
+
+    
+}
+
+.button-wrap {
+    display: grid;
+}
+
+.dispencer {
+    width: 90px;
+    height: 125px;
+    background-color: black;
+    position: relative;
+    top: 225px;
+    left: 140px;
+}
+
+/* Стаканчик */
+.cup {
+    width: 75px;
+    height: auto;
+    position: absolute;
+
+    left: 590px;
+    top: 891px;
+
+    visibility: hidden;
+}
+
+/*Сдача????*/
+.change {
+    width: 43px;
+    height: 16px;
+    background-color: green;
+    margin-top: 16px;
+    margin-left: 4px;
+    visibility: hidden;
+    overflow: hidden;
+}
+
+/* Анимация */
+.animate__animated.animate__slideInDown {
+    --animate-duration: 3s;
+
+
+}
+
+@keyframes slideInDown {
+    0% {
+        transform: translate3d(0,-70%,0);
+
+    }
+}
+
